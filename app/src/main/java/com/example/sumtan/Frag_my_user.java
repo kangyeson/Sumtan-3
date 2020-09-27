@@ -1,24 +1,53 @@
 package com.example.sumtan;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
-
+import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
-public class Frag_my_user extends Fragment {
+import androidx.fragment.app.Fragment;
 
-    private View view;
+public class Frag_my_user extends Fragment{
 
-    @Nullable
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState)
-    {
-        view = inflater.inflate(R.layout.activity_frag_my_user,container,false);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
+        View v = inflater.inflate(R.layout.activity_frag_my_user, container, false);
 
-        return view;
+        final Button bt1 = (Button) v.findViewById(R.id.mypage_lookup);
+        final Button bt2 = (Button) v.findViewById(R.id.mypage_management);
+        Button bt_setting=(Button)v.findViewById(R.id.setting_btn);
+
+
+        bt_setting.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Intent intent = new Intent(getContext(), change_infor.class);
+                startActivity(intent);
+            }
+        });
+
+        bt1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                bt1.setBackgroundColor(Color.rgb(179,152,131));
+                bt2.setBackgroundColor(Color.WHITE);
+                getFragmentManager().beginTransaction().replace(R.id.my_fragment_page, new Frag_lookup()).commit();
+            }
+        });
+
+        bt2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                bt2.setBackgroundColor(Color.rgb(179,152,131));
+                bt1.setBackgroundColor(Color.WHITE);
+                getFragmentManager().beginTransaction().replace(R.id.my_fragment_page, new Frag_management()).commit();
+            }
+        });
+
+        return v;
     }
+
 }
