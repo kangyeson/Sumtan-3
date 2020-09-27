@@ -180,7 +180,7 @@
                         android:layout_marginTop="25dp"
                         android:layout_width="300dp"
                         android:layout_height="150dp"
-                        android:background="@drawable/input_radius_write"
+                        android:background="@drawable/introduce_box"
                         android:inputType="textLongMessage"
                         android:padding="25dp"
                         android:hint="@string/shelter_check_resume"
@@ -264,7 +264,7 @@
                         android:layout_gravity="center_horizontal"
                         android:layout_marginTop="15dp"
                         android:hint="동물 미용 자격증 2급"
-                        android:background="@drawable/input_radius_write"
+                        android:background="@drawable/introduce_box"
                         android:inputType="textLongMessage"
                         android:padding="12dp" />
                 </LinearLayout>

@@ -4,40 +4,38 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="#ffffff"
-    tools:context=".Modify_shelter">
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        >
-
-        <ImageView
-            android:layout_width="80dp"
-            android:layout_height="60dp"
-            android:src="@drawable/logo"
-            android:layout_gravity="center_horizontal"
-            />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="소중한 작은 것들"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="10dp"
-            />
-
-    </LinearLayout>
+    tools:context=".Frag_join_user">
 
     <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="fill_parent"
         android:orientation="vertical"
-        android:layout_marginTop="100dp"
-        android:id="@+id/ajoin"
+        android:background="#ffffff"
+        android:id="@+id/pjoin"
         >
+        <!--아이디-->
+        <LinearLayout
+            android:layout_marginTop="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="50dp"
+                android:text="아이디"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="normal"/>
+            <EditText
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_radius"
+                android:padding="10dp"
+                android:textColor="#000000"
+                android:id="@+id/p_id_text"
+                />
+        </LinearLayout>
 
         <!--비밀번호-->
         <LinearLayout
@@ -59,7 +57,55 @@
                 android:background="@drawable/input_radius"
                 android:padding="10dp"
                 android:textColor="#000000"
-                android:id="@+id/a_pw_text"
+                android:id="@+id/p_pw_text"
+                />
+        </LinearLayout>
+
+        <!--이름-->
+        <LinearLayout
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="50dp"
+                android:text="이름"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="normal"/>
+            <EditText
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_radius"
+                android:padding="10dp"
+                android:textColor="#000000"
+                android:id="@+id/p_name_text"
+                />
+        </LinearLayout>
+
+        <!--이메일-->
+        <LinearLayout
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="40dp"
+                android:text="이메일"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="normal"/>
+            <EditText
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_radius"
+                android:padding="10dp"
+                android:textColor="#000000"
+                android:id="@+id/p_email_text"
                 />
         </LinearLayout>
 
@@ -83,114 +129,21 @@
                 android:background="@drawable/input_radius"
                 android:padding="10dp"
                 android:textColor="#000000"
-                android:id="@+id/a_phone_text"
+                android:id="@+id/p_phone_text"
                 />
-        </LinearLayout>
-
-        <!--보호소명-->
-        <LinearLayout
-            android:layout_marginTop="12dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <TextView
-                android:layout_width="80dp"
-                android:layout_height="35dp"
-                android:layout_marginLeft="40dp"
-                android:text="보호소명"
-                android:textColor="#000000"
-                android:textSize="18dp"
-                android:textStyle="normal"/>
-            <EditText
-                android:layout_width="240dp"
-                android:layout_height="wrap_content"
-                android:background="@drawable/input_radius"
-                android:padding="10dp"
-                android:textColor="#000000"
-                android:id="@+id/a_shelter_text"
-                />
-        </LinearLayout>
-
-        <!--대표자명-->
-        <LinearLayout
-            android:layout_marginTop="12dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <TextView
-                android:layout_width="80dp"
-                android:layout_height="35dp"
-                android:layout_marginLeft="40dp"
-                android:text="대표자명"
-                android:textColor="#000000"
-                android:textSize="18dp"
-                android:textStyle="normal"/>
-            <EditText
-                android:layout_width="240dp"
-                android:layout_height="wrap_content"
-                android:background="@drawable/input_radius"
-                android:padding="10dp"
-                android:textColor="#000000"
-                android:id="@+id/a_director_text"
-                />
-        </LinearLayout>
-
-        <!--주소-->
-        <LinearLayout
-            android:layout_marginTop="12dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <TextView
-                android:layout_width="60dp"
-                android:layout_height="35dp"
-                android:layout_marginLeft="60dp"
-                android:text="주소"
-                android:textColor="#000000"
-                android:textSize="18dp"
-                android:textStyle="normal"/>
-            <Spinner
-                android:layout_width="75dp"
-                android:layout_height="40dp"
-                android:layout_marginRight="7dp"
-                android:background="@drawable/input_radius"
-                android:padding="10dp"
-                android:textColor="#000000"
-                android:id="@+id/a_address1_spinner">
-            </Spinner>
-
-            <Spinner
-                android:layout_width="75dp"
-                android:layout_height="40dp"
-                android:layout_marginRight="7dp"
-                android:background="@drawable/input_radius"
-                android:padding="10dp"
-                android:textColor="#000000"
-                android:id="@+id/a_address2_spinner">
-            </Spinner>
-
-            <Spinner
-                android:layout_width="75dp"
-                android:layout_height="40dp"
-                android:background="@drawable/input_radius"
-                android:padding="10dp"
-                android:textColor="#000000"
-                android:id="@+id/a_address3_spinner">
-            </Spinner>
-
         </LinearLayout>
 
         <Button
-            android:id="@+id/btn_modify"
+            android:id="@+id/btn_join_user"
+            android:layout_marginTop="50dp"
             android:layout_width="125dp"
-            android:layout_height="52dp"
+            android:layout_height="50dp"
             android:textSize="18dp"
             android:textStyle="bold"
             android:textColor="#000000"
-            android:layout_marginTop="50dp"
             android:background="@drawable/lj_radius"
-            android:text="수정완료"
-            android:layout_gravity="center" />
+            android:text="회원가입"
+            android:layout_gravity="center"/>
 
     </LinearLayout>
 

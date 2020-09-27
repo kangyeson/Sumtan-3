@@ -161,7 +161,7 @@
                 android:layout_marginTop="25dp"
                 android:layout_width="300dp"
                 android:layout_height="100dp"
-                android:background="@drawable/input_radius_write"
+                android:background="@drawable/introduce_box"
                 android:inputType="textLongMessage"
                 android:padding="12dp"
                 android:layout_gravity="center_horizontal"

@@ -93,7 +93,7 @@
             android:layout_height="52dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="50dp"
-            android:background="@drawable/login_radius"
+            android:background="@drawable/lj_radius"
             android:text="로그인"
             />
         <TextView
@@ -166,7 +166,7 @@
             android:layout_height="52dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="50dp"
-            android:background="@drawable/login_radius"
+            android:background="@drawable/lj_radius"
             android:text="로그인"
             />
         <TextView

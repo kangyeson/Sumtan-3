@@ -14,15 +14,15 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="HardcodedDebugMode">
-        <activity android:name=".Modify_shelter"></activity>
-        <activity android:name=".MainActivity_shelter">
+        <activity android:name=".Modify_shelter" />
+        <activity android:name=".Start_splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Start_splash" />
+        <activity android:name=".MainActivity_shelter" />
         <activity android:name=".Join" />
         <activity android:name=".MainActivity" />
         <activity android:name=".Write_resume" />

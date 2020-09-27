@@ -114,7 +114,7 @@
                     android:layout_height="130dp"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="15dp"
-                    android:background="@drawable/input_radius_write"
+                    android:background="@drawable/introduce_box"
                     android:inputType="textLongMessage"
                     android:padding="12dp" />
             </LinearLayout>
@@ -157,7 +157,7 @@
              android:layout_height="wrap_content"
              android:layout_gravity="center_horizontal"
              android:layout_marginTop="15dp"
-             android:background="@drawable/input_radius_write"
+             android:background="@drawable/introduce_box"
              android:inputType="textImeMultiLine"
              android:padding="12dp" />
 
@@ -179,7 +179,7 @@
                  android:layout_height="70dp"
                  android:layout_gravity="center_horizontal"
                  android:layout_marginTop="15dp"
-                 android:background="@drawable/input_radius_write"
+                 android:background="@drawable/introduce_box"
                  android:inputType="textLongMessage"
                  android:padding="12dp" />
          </LinearLayout>
