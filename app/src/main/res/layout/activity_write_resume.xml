@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".Write_resume"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width= "match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        >
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:text="개인"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:text="단체"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/personal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginBottom="40dp"
+                android:text="* 모든 항목은 필수 입니다"
+                android:textColor="#FF0000"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="최종학력" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <RadioButton
+                    android:id="@+id/radio0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:text="중졸이하" />
+
+                <RadioButton
+                    android:id="@+id/radio1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:text="고졸" />
+
+                <RadioButton
+                    android:id="@+id/radio2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:text="대학 재학" />
+
+                <RadioButton
+                    android:id="@+id/radio3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="대졸" />
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:text="경력"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_height="130dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/input_radius_write"
+                    android:inputType="textLongMessage"
+                    android:padding="12dp" />
+            </LinearLayout>
+
+            <Button
+                android:layout_width="110dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="70dp"
+                android:background="@drawable/input_radius_button"
+                android:text="작성완료" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="90dp"
+        android:orientation="vertical">
+
+        <TextView
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:layout_gravity="start"
+             android:layout_marginBottom="40dp"
+             android:text="* 모든 항목은 필수 입니다"
+             android:textColor="#FF0000"
+             android:textSize="14dp"
+             android:textStyle="bold" />
+
+        <TextView
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:text="기관명" />
+
+        <EditText
+             android:layout_width="300dp"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center_horizontal"
+             android:layout_marginTop="15dp"
+             android:background="@drawable/input_radius_write"
+             android:inputType="textImeMultiLine"
+             android:padding="12dp" />
+
+         <LinearLayout
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="25dp"
+             android:orientation="vertical">
+
+             <TextView
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginRight="30dp"
+                 android:text="전문분야"
+                 android:textColor="#000000" />
+
+             <EditText
+                 android:layout_width="300dp"
+                 android:layout_height="70dp"
+                 android:layout_gravity="center_horizontal"
+                 android:layout_marginTop="15dp"
+                 android:background="@drawable/input_radius_write"
+                 android:inputType="textLongMessage"
+                 android:padding="12dp" />
+         </LinearLayout>
+
+        <Button
+            android:layout_width="110dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="70dp"
+            android:background="@drawable/input_radius_button"
+            android:text="작성완료" />
+    </LinearLayout>
+</LinearLayout>

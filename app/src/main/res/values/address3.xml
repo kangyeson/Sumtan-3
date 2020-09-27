@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    //서울
+    <string-array name="Gangnam">
+        <item>개포동</item>
+        <item>논현동</item>
+        <item>대치동</item>
+        <item>도곡동</item>
+        <item>삼성동</item>
+        <item>세곡동</item>
+        <item>수서동</item>
+        <item>신사동</item>
+        <item>압구정동</item>
+        <item>역삼동</item>
+        <item>율현동구</item>
+        <item>일원동</item>
+        <item>일원본동</item>
+        <item>자곡동</item>
+        <item>청담동</item>
+    </string-array>
+
+    <string-array name="Gangdong">
+        <item>강일동</item>
+        <item>고덕동</item>
+        <item>길동</item>
+        <item>둔춘동</item>
+        <item>명일동</item>
+        <item>상일동</item>
+        <item>암사동</item>
+        <item>천호동</item>
+    </string-array>
+
+    <string-array name="Gangbuk">
+        <item>미아동</item>
+        <item>변동</item>
+        <item>삼각산동</item>
+        <item>삼양동</item>
+        <item>송중동</item>
+        <item>송천동</item>
+        <item>수유동</item>
+        <item>우이동</item>
+        <item>인수동</item>
+    </string-array>
+
+    //노가다 화이팅..
+    //마지막 구
+    <string-array name="Jungnang">
+        <item>망우동</item>
+        <item>망우본동</item>
+        <item>면목동</item>
+        <item>면목본동</item>
+        <item>묵동</item>
+        <item>상봉동</item>
+        <item>신내동</item>
+        <item>중화동</item>
+    </string-array>
+
+    //경기도
+    <string-array name="Gapyeong">
+        <item>가평읍</item>
+        <item>북면</item>
+        <item>상면</item>
+        <item>설악면</item>
+        <item>조종면</item>
+        <item>청평면</item>
+    </string-array>
+
+    <string-array name="Goyang_Deogyang">
+        <item>강매동</item>
+        <item>고양동</item>
+        <item>관산동</item>
+        <item>내곡동</item>
+        <item>내유동</item>
+        <item>능곡동</item>
+        <item>대덕동</item>
+        <item>대자동</item>
+        <item>대장동</item>
+        <item>덕은동</item>
+        <item>도매동</item>
+        <item>동산동</item>
+        <item>벽제동</item>
+        <item>북한동</item>
+        <item>삼송동</item>
+        <item>선유동</item>
+        <item>성사동</item>
+        <item>신원동</item>
+        <item>신편동</item>
+        <item>오금동</item>
+        <item>용두동</item>
+        <item>원당동</item>
+        <item>원신동</item>
+        <item>원흥동</item>
+        <item>주교동</item>
+        <item>지축동</item>
+        <item>창릉동</item>
+        <item>토당동</item>
+        <item>행신동</item>
+        <item>행주내동</item>
+        <item>행주동</item>
+        <item>행주외동</item>
+        <item>향동동</item>
+        <item>현천동</item>
+        <item>화정동</item>
+        <item>효자동</item>
+        <item>흥도동</item>
+    </string-array>
+</resources>
